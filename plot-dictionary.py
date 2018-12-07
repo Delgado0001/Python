@@ -4,10 +4,10 @@ import turtle
 
 def main():
 	#table is a dictionary
-	table = {-100:0,-90:0,-80:0,-70:0,-60:0,-50:0,
-				-40:0,-30:0,-20:0,-10:0,0:0,
-					10:0,20:0,30:0,40:0,50:0,
-					60:0,70:0,80:0,90:0,100:0
+	table = {-100:6,-90:3,-80:0,-70:3,-60:6,-50:9,
+				-40:12,-30:9,-20:6,-10:3,0:0,
+					10:3,20:6,30:9,40:12,50:9,
+					60:6,70:3,80:0,90:3,100:6
 			}
 	print(" KEYS ")
 	print(table.keys())
@@ -24,7 +24,7 @@ def main():
 		t.penup()
 		t.goto(h,k)
 		t.pendown()
-		t.circle(5)
+		t.circle(6)
 	twin.exitonclick()
 	
 main()
@@ -42,5 +42,5 @@ for h,k in table.items(): #get the items in the dictionary
 h and k are then ploted using
 		t.goto(h,k)
 		t.pendown()
-		t.circle(5)
+		t.circle(6)
 """
